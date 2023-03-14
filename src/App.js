@@ -1,4 +1,5 @@
 import { BrowserRouter } from 'react-router-dom';
+import { CssBaseline } from '@mui/material';
 import AppRoutes from './routes';
 
 import Menu from './components/Menu';
@@ -20,6 +21,7 @@ function App() {
     <BrowserRouter>
       <ThemeProvider>
         <CartProvider>
+          <CssBaseline />
           <Menu />
           <AppRoutes />
           <ToastContainer />
