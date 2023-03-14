@@ -41,6 +41,7 @@ const Home = () => {
   return (
     <div>
       <div className="main-container">
+
         <div className="products-list" data-testid="products-list">
           {
             products.map((product) => (

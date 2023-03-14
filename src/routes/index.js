@@ -4,11 +4,13 @@ import { Route, Routes } from 'react-router-dom';
 import Cart from '../pages/Cart';
 import Details from '../pages/Details';
 import Home from '../pages/Home';
+import Login from '../pages/Login';
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/login" element={<Login />} />
       <Route path="carrinho" element={<Cart />} />
       <Route path="detalhes" element={<Details />} />
       {/*  <Route path="*" element={() => <h1>teste</h1>} /> */}

@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React from 'react';
 import {useNavigate} from 'react-router-dom'
 
@@ -17,7 +18,14 @@ const CardProduct = ({ product }) => {
       />
       <h2>{product.name}</h2>
       <span>{product.priceFormatted}</span>
-      <button onClick={handleClickProduct} className='button-default'>Ver Detalhes</button>
+
+      <Button
+        variant='contained'
+        style={{color: '#fff', background: '#000'}}
+        onClick={handleClickProduct}
+      >
+        Ver Detalhes
+      </Button>
     </div>
   );
 }
