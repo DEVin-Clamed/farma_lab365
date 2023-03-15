@@ -13,13 +13,20 @@ import { CartContext } from '../../contexts/CartContext'
 import { priceFormat } from '../../utils/priceFormat'
 import { Container } from '@mui/system';
 import { Button, Tooltip } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
+  const navigate = useNavigate()
   const { cart, removeItem, changeAmount } = useContext(CartContext)
 
   const total = priceFormat(cart.reduce((acc, currentItem) => {
     return acc + currentItem.subTotal
   }, 0))
+
+  const handleNavigateToCheckout = () => {
+    navigate('/checkout')
+  }
+
 
   const handleDeleteItem = (itemId) => {
     Swal.fire({
@@ -92,7 +99,7 @@ const Cart = () => {
                 <TableCell >Total</TableCell>
                 <TableCell >{total}</TableCell>
                 <TableCell>
-                  <Button variant='outlined'>Continuar compra</Button>
+                  <Button variant='outlined' onClick={handleNavigateToCheckout}>Continuar compra</Button>
                 </TableCell>
               </TableRow>
 
