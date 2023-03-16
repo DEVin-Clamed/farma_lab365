@@ -1,5 +1,7 @@
 import { BrowserRouter } from 'react-router-dom';
 import { CssBaseline } from '@mui/material';
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns'
 import AppRoutes from './routes';
 
 import Menu from './components/Menu';
@@ -18,6 +20,7 @@ import '@fontsource/roboto/700.css';
 
 function App() {
   return (
+    <LocalizationProvider dateAdapter={AdapterDateFns}>
     <BrowserRouter>
       <ThemeProvider>
         <CartProvider>
@@ -28,6 +31,7 @@ function App() {
         </CartProvider>
       </ThemeProvider>
     </BrowserRouter>
+    </LocalizationProvider>
   );
 }
 

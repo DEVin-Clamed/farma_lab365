@@ -50,12 +50,17 @@ export const CartProvider = ({ children }) => {
     toast.success('Deletado com sucesso')
   }
 
+  const resetCart = () => {
+    setCart([])
+  }
+
   return (
     <CartContext.Provider value={{
       cart: cart,
       addProduct: addProduct,
       removeItem: removeItem,
-      changeAmount: changeAmount
+      changeAmount: changeAmount,
+      resetCart: resetCart
     }}>
       {children}
     </CartContext.Provider>

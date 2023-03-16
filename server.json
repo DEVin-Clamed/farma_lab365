@@ -3,72 +3,270 @@
     {
       "id": 1,
       "name": "Creme hidratante facial",
-      "price": 50.00,
-      "discount": 5.0,
+      "price": 50,
+      "discount": 5,
       "image": "https://www.farmasesi.com.br/estatico/sesi/images/produto/16534.png"
     },
     {
       "id": 2,
       "name": "Protetor solar FPS 50",
-      "price": 35.00,
+      "price": 35,
       "discount": 0.05,
       "image": "https://www.farmasesi.com.br/estatico/sesi/images/temp/222_16527.png"
     },
     {
       "id": 3,
       "name": "Esfoliante facial",
-      "price": 28.00,
-      "discount": 0.0,
+      "price": 28,
+      "discount": 0,
       "image": "https://www.farmasesi.com.br/estatico/sesi/images/produto/16534.png"
     },
     {
       "id": 4,
       "name": "Máscara facial de argila",
-      "price": 40.00,
-      "discount": 0.20,
+      "price": 40,
+      "discount": 0.2,
       "image": "https://www.farmasesi.com.br/estatico/sesi/images/temp/222_16527.png"
     },
     {
       "id": 5,
       "name": "Tônico facial",
-      "price": 25.00,
-      "discount": 0.0,
+      "price": 25,
+      "discount": 0,
       "image": "https://www.farmasesi.com.br/estatico/sesi/images/temp/222_16527.png"
     },
     {
       "id": 6,
       "name": "Óleo facial para hidratação",
-      "price": 60.00,
+      "price": 60,
       "discount": 0.15,
       "image": "https://www.farmasesi.com.br/estatico/sesi/images/temp/222_16527.png"
     },
     {
       "id": 7,
       "name": "Sabonete facial para pele oleosa",
-      "price": 18.00,
-      "discount": 0.0,
+      "price": 18,
+      "discount": 0,
       "image": "https://www.farmasesi.com.br/estatico/sesi/images/temp/222_16527.png"
     },
     {
       "id": 8,
       "name": "Sérum anti-idade",
-      "price": 75.00,
+      "price": 75,
       "discount": 0.25,
       "image": "https://www.farmasesi.com.br/estatico/sesi/images/temp/222_16527.png"
     },
     {
       "id": 9,
       "name": "Creme para área dos olhos",
-      "price": 30.00,
-      "discount": 0.0,
+      "price": 30,
+      "discount": 0,
       "image": "https://www.farmasesi.com.br/estatico/sesi/images/temp/222_16527.png"
     },
     {
       "id": 10,
       "name": "Água micelar",
-      "price": 20.00,
-      "discount": 0.0,
+      "price": 20,
+      "discount": 0,
       "image": "https://www.farmasesi.com.br/estatico/sesi/images/temp/222_16527.png"
+    }
+  ],
+  "orders": [
+    {
+      "person": {
+        "name": "henrique douglas",
+        "email": "h@gmail.com",
+        "cpf": "233.323.233-32"
+      },
+      "address": {
+        "cep": "01001-000",
+        "street": "Praça da Sé",
+        "city": "São Paulo",
+        "uf": "SP",
+        "complement": "lado ímpar",
+        "neighborhood": "Sé"
+      },
+      "payment": {
+        "cardName": "henrique douglas ",
+        "cardNumber": "2334 3434 3434 3434",
+        "cardDateExpiration": "2026-05-01T03:00:00.000Z",
+        "cardCvv": "111"
+      },
+      "id": 1
+    },
+    {
+      "person": {
+        "name": "323",
+        "email": "2323",
+        "cpf": "232323"
+      },
+      "address": {
+        "cep": "3434 -   ",
+        "street": "3434",
+        "city": "3434",
+        "uf": "MS",
+        "complement": "3434",
+        "neighborhood": "3434"
+      },
+      "payment": {
+        "cardName": "3434",
+        "cardNumber": "3434               ",
+        "cardDateExpiration": "2023-05-01T03:00:00.000Z",
+        "cardCvv": ""
+      },
+      "cart": [
+        {
+          "itemId": "7feaebf4-4ad3-487c-ad3f-468224872fc8",
+          "product": {
+            "id": 3,
+            "name": "Esfoliante facial",
+            "price": 28,
+            "discount": 0,
+            "image": "https://www.farmasesi.com.br/estatico/sesi/images/produto/16534.png",
+            "priceFormatted": "R$28,00"
+          },
+          "priceWithDiscountFormatted": "R$28,00",
+          "priceWithDiscount": 28,
+          "observations": "",
+          "amount": 6,
+          "subTotal": 168,
+          "subTotalFormatted": "R$168,00"
+        },
+        {
+          "itemId": "6ee9acd5-b199-409d-8d38-20983afdf79b",
+          "product": {
+            "id": 7,
+            "name": "Sabonete facial para pele oleosa",
+            "price": 18,
+            "discount": 0,
+            "image": "https://www.farmasesi.com.br/estatico/sesi/images/temp/222_16527.png",
+            "priceFormatted": "R$18,00"
+          },
+          "priceWithDiscountFormatted": "R$18,00",
+          "priceWithDiscount": 18,
+          "observations": "",
+          "amount": 7,
+          "subTotal": 126,
+          "subTotalFormatted": "R$126,00"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "person": {
+        "name": "333",
+        "email": "2323",
+        "cpf": "2323"
+      },
+      "address": {
+        "cep": "34   -   ",
+        "street": "3434",
+        "city": "3434",
+        "uf": "MT",
+        "complement": "3434",
+        "neighborhood": "3434"
+      },
+      "payment": {
+        "cardName": "3434",
+        "cardNumber": "3434               ",
+        "cardDateExpiration": "0434-03-16T00:17:13.283Z",
+        "cardCvv": "343"
+      },
+      "cart": [
+        {
+          "itemId": "7feaebf4-4ad3-487c-ad3f-468224872fc8",
+          "product": {
+            "id": 3,
+            "name": "Esfoliante facial",
+            "price": 28,
+            "discount": 0,
+            "image": "https://www.farmasesi.com.br/estatico/sesi/images/produto/16534.png",
+            "priceFormatted": "R$28,00"
+          },
+          "priceWithDiscountFormatted": "R$28,00",
+          "priceWithDiscount": 28,
+          "observations": "",
+          "amount": 6,
+          "subTotal": 168,
+          "subTotalFormatted": "R$168,00"
+        },
+        {
+          "itemId": "6ee9acd5-b199-409d-8d38-20983afdf79b",
+          "product": {
+            "id": 7,
+            "name": "Sabonete facial para pele oleosa",
+            "price": 18,
+            "discount": 0,
+            "image": "https://www.farmasesi.com.br/estatico/sesi/images/temp/222_16527.png",
+            "priceFormatted": "R$18,00"
+          },
+          "priceWithDiscountFormatted": "R$18,00",
+          "priceWithDiscount": 18,
+          "observations": "",
+          "amount": 7,
+          "subTotal": 126,
+          "subTotalFormatted": "R$126,00"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "person": {
+        "name": "3332",
+        "email": "333",
+        "cpf": "2332"
+      },
+      "address": {
+        "cep": "344  -   ",
+        "street": "344",
+        "city": "34343",
+        "uf": "PR",
+        "complement": "343444",
+        "neighborhood": "3434"
+      },
+      "payment": {
+        "cardName": "344",
+        "cardNumber": "3434               ",
+        "cardDateExpiration": "2026-05-01T03:00:00.000Z",
+        "cardCvv": "344"
+      },
+      "cart": [
+        {
+          "itemId": "7feaebf4-4ad3-487c-ad3f-468224872fc8",
+          "product": {
+            "id": 3,
+            "name": "Esfoliante facial",
+            "price": 28,
+            "discount": 0,
+            "image": "https://www.farmasesi.com.br/estatico/sesi/images/produto/16534.png",
+            "priceFormatted": "R$28,00"
+          },
+          "priceWithDiscountFormatted": "R$28,00",
+          "priceWithDiscount": 28,
+          "observations": "",
+          "amount": 6,
+          "subTotal": 168,
+          "subTotalFormatted": "R$168,00"
+        },
+        {
+          "itemId": "6ee9acd5-b199-409d-8d38-20983afdf79b",
+          "product": {
+            "id": 7,
+            "name": "Sabonete facial para pele oleosa",
+            "price": 18,
+            "discount": 0,
+            "image": "https://www.farmasesi.com.br/estatico/sesi/images/temp/222_16527.png",
+            "priceFormatted": "R$18,00"
+          },
+          "priceWithDiscountFormatted": "R$18,00",
+          "priceWithDiscount": 18,
+          "observations": "",
+          "amount": 7,
+          "subTotal": 126,
+          "subTotalFormatted": "R$126,00"
+        }
+      ],
+      "id": 4
     }
   ]
 }
