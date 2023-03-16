@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Orders from '../pages/Admin/Orders';
 
 import Cart from '../pages/Cart';
 import Checkout from '../pages/Checkout';
@@ -11,6 +12,7 @@ const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/pedidos" element={<Orders />} />
       <Route path="/login" element={<Login />} />
       <Route path="carrinho" element={<Cart />} />
       <Route path="detalhes" element={<Details />} />

@@ -81,6 +81,16 @@ function Checkout() {
         break;
       }
 
+      case 1: {
+        setStep(step + 1)
+        break;
+      }
+
+      case 2: {
+        setStep(step + 1)
+        break;
+      }
+
       default:
         break;
     }
