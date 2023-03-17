@@ -4,9 +4,11 @@ import { useNavigate } from "react-router-dom";
 import { CartContext } from "../../contexts/CartContext";
 import MenuIcon from '@mui/icons-material/Menu';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { AuthContext } from "../../contexts/AuthContext";
 
 const Menu = () => {
 
+  const { user, logout } = useContext(AuthContext)
   const navigate = useNavigate()
   const { cart } = useContext(CartContext)
 
@@ -44,11 +46,17 @@ const Menu = () => {
           >
             Clamed Farm
           </Typography>
-          <Button color="inherit" onClick={handleNavigateToLogin}>Login</Button>
+          {
+            user ?
+              <Button color="inherit" onClick={() => logout()}>Logout</Button>
+              :
+              <Button color="inherit" onClick={handleNavigateToLogin}>Login</Button>
+          }
           <Button color="inherit" onClick={handleNavigateToCart}>
             <Badge badgeContent={cart.length} color="success">
               <ShoppingCartIcon />
             </Badge>
+            <Typography variant="h6">{user}</Typography>
           </Button>
         </Toolbar>
       </AppBar>

@@ -17,20 +17,23 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import { AuthProvider } from './contexts/AuthContext';
 
 function App() {
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns}>
-    <BrowserRouter>
-      <ThemeProvider>
-        <CartProvider>
-          <CssBaseline />
-          <Menu />
-          <AppRoutes />
-          <ToastContainer />
-        </CartProvider>
-      </ThemeProvider>
-    </BrowserRouter>
+      <BrowserRouter>
+        <AuthProvider>
+          <ThemeProvider>
+            <CartProvider>
+              <CssBaseline />
+              <Menu />
+              <AppRoutes />
+              <ToastContainer />
+            </CartProvider>
+          </ThemeProvider>
+        </AuthProvider>
+      </BrowserRouter>
     </LocalizationProvider>
   );
 }

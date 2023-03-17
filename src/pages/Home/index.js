@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import { productsAction } from "../../actions/products.action";
 import { Grid } from "@mui/material";
@@ -7,8 +7,10 @@ import CardProduct from "../../components/CardProduct";
 
 import { priceFormat } from '../../utils/priceFormat'
 import { Container } from "@mui/system";
+import { AuthContext } from "../../contexts/AuthContext";
 
 const Home = () => {
+  const {user} = useContext(AuthContext)
   const [products, setProducts] = useState([])
 
   const getProducts = async () => {
@@ -43,7 +45,7 @@ const Home = () => {
   return (
 
     <Container>
-
+      <h1>Bem vindo {user}</h1>
 
       <Grid container>
         {
