@@ -7,11 +7,13 @@ import Checkout from '../pages/Checkout';
 import Details from '../pages/Details';
 import Home from '../pages/Home';
 import Login from '../pages/Login';
+import MyList from '../pages/MyList';
 
 const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/desejos" element={<MyList />} />
       <Route path="/pedidos" element={<Orders />} />
       <Route path="/login" element={<Login />} />
       <Route path="carrinho" element={<Cart />} />

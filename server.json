@@ -1,4 +1,31 @@
 {
+  "favorites": [
+    {
+      "description": "dipirona",
+      "status": true,
+      "id": 1
+    },
+    {
+      "description": "teste",
+      "status": true,
+      "id": 3
+    },
+    {
+      "description": "teste 2",
+      "status": true,
+      "id": 5
+    },
+    {
+      "description": "teste",
+      "status": false,
+      "id": 7
+    },
+    {
+      "description": "oleo ",
+      "status": false,
+      "id": 8
+    }
+  ],
   "users": [
     {
       "id": 1,

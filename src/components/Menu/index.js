@@ -58,6 +58,9 @@ const Menu = () => {
             </Badge>
             <Typography variant="h6">{user}</Typography>
           </Button>
+          <Button color="inherit" onClick={() => navigate('/desejos')}>
+            <Typography variant="h6">Lista de desejos</Typography>
+          </Button>
         </Toolbar>
       </AppBar>
     </Box>
